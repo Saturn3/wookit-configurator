@@ -17,9 +17,9 @@ Nel selettore il cliente **non vede nome e foto del prodotto**: vede l'**antepri
 2. Compare il menu **Kit regalo** nella barra laterale.
 3. Vai su **Impostazioni → Permalink** e premi **Salva** una volta (rigenera gli URL `/kit/...`).
 
-Requisiti: WordPress 6.2+, WooCommerce 7.0+, PHP 7.4+. Testato su WordPress 7.1.3 e WooCommerce 11.2.1.
+Requisiti: WordPress 6.2+, WooCommerce 7.0+, PHP 8.2+. Testato su WordPress 7.1.3 e WooCommerce 11.2.1.
 
-## Configurazione per nefel.it
+## Configurazione
 
 ### 1. Campi personalizzati della fragranza
 **Kit regalo → Impostazioni**
@@ -30,7 +30,7 @@ Requisiti: WordPress 6.2+, WooCommerce 7.0+, PHP 7.4+. Testato su WordPress 7.1.
 | Meta key – Anteprima fragranza | `anteprima_fragranza` | ID allegato, URL o campo immagine ACF |
 | Meta key – Note olfattive (facoltativo) | `note_fragranza` | es. "Agrumata - Luminosa" |
 
-Il campo propone in automatico le meta key già presenti sui prodotti: scegli quelle usate su nefel.it. Con l'opzione "Escludi prodotti senza nome fragranza" (attiva di default) i prodotti senza fragranza non compaiono nel selettore.
+Il campo propone in automatico le meta key già presenti sui prodotti: scegli quelle usate sul tuo woocommerce. Con l'opzione "Escludi prodotti senza nome fragranza" (attiva di default) i prodotti senza fragranza non compaiono nel selettore.
 
 ### 2. Prodotto confezione
 Crea un prodotto semplice, es. **"Christmas Gift Box"** a 1,50 €, con l'immagine della scatola. Consigliato: *Visibilità catalogo = Nascosto*. Con l'opzione "Confezione vendibile solo nel kit" (attiva) il prodotto non si può acquistare da solo.
@@ -41,10 +41,10 @@ Crea un prodotto semplice, es. **"Christmas Gift Box"** a 1,50 €, con l'immagi
 - **Composizione del kit**
   - *Confezione*: cerca e seleziona il prodotto confezione.
   - *Prodotti da scegliere (step)*: 2 righe precompilate ("1. Scegli il primo prodotto", …). Puoi aggiungerne o toglierne.
-  - *Linee prodotto*: aggiungi le categorie **Hand Soap** e **Body Wash**. Titolo, sottotitolo e immagine sono facoltativi: se li lasci vuoti si usano nome, descrizione e immagine della categoria WooCommerce.
+  - *Linee prodotto*: aggiungi le categorie scelte. Titolo, sottotitolo e immagine sono facoltativi: se li lasci vuoti si usano nome, descrizione e immagine della categoria WooCommerce.
   - Opzioni: stesso prodotto in più step, preselezione (nessuna / prima linea / prima fragranza), comportamento dopo "Aggiungi al carrello" (resta in pagina, carrello o checkout).
-- **Testi e immagini** (schede Hero, Configuratore, Riepilogo, Sezione finale): tutti i testi del PDF sono precompilati e modificabili; le immagini si scelgono dalla Libreria media.
-- **Colori**: sfondo delle sezioni (bordeaux `#80161b` preso dal PDF), testo, bordo della selezione, pulsante.
+- **Testi e immagini** (schede Hero, Configuratore, Riepilogo, Sezione finale): tutti i testi sono precompilati e modificabili; le immagini si scelgono dalla Libreria media.
+- **Colori**: sfondo delle sezioni (default bordeaux `#80161b`), testo, bordo della selezione, pulsante.
 
 Pubblica il kit. La landing è subito disponibile su `https://<dominio>/kit/christmas-gift-set/`.
 
@@ -76,7 +76,7 @@ Christmas Gift Box        1,50 €   Contenuto: Sicilian Bergamot Hand Soap, Tur
 
 ## Multilingua (WPML)
 
-nefel.it usa WPML e WooCommerce Multilingual: il file `wpml-config.xml` incluso rende il kit traducibile. Testi e titoli degli step si traducono, mentre confezione, categorie, immagini e colori vengono copiati e convertiti in automatico negli ID della lingua corrente. Le stringhe fisse del plugin si traducono con `languages/wookit-configurator.pot`.
+Usa WPML o WooCommerce Multilingual: il file `wpml-config.xml` incluso rende il kit traducibile. Testi e titoli degli step si traducono, mentre confezione, categorie, immagini e colori vengono copiati e convertiti in automatico negli ID della lingua corrente. Le stringhe fisse del plugin si traducono con `languages/wookit-configurator.pot`.
 
 ## Cache
 
@@ -93,4 +93,3 @@ L'aggiunta al carrello usa l'endpoint `?wc-ajax=wkc_add_kit`, che non passa dall
 
 - Sono selezionabili i **prodotti semplici**; i prodotti variabili/variazioni sono esclusi.
 - Il prezzo del kit è la somma di confezione e prodotti: non sono previsti sconti dedicati al kit.
-- Va verificato su staging l'aggiornamento del mini-carrello laterale del tema Cosmetsy: il plugin emette gli eventi standard WooCommerce (`added_to_cart`, `wc_fragment_refresh`).
