@@ -1,0 +1,29 @@
+/* WooKit Configurator – admin */
+.wkc-section { padding: 6px 0 18px; border-bottom: 1px solid #f0f0f1; margin-bottom: 14px; }
+.wkc-section:last-child { border-bottom: 0; }
+.wkc-section h3 { margin: 8px 0 4px; font-size: 14px; }
+.wkc-field { margin: 10px 0; }
+.wkc-field > label { display: block; font-weight: 600; margin-bottom: 4px; }
+.wkc-field input[type=text], .wkc-field textarea, .wkc-field select { width: 100%; max-width: 100%; }
+.wkc-toggle label { font-weight: 400 !important; display: inline-flex; gap: 6px; align-items: center; }
+.wkc-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
+.wkc-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 20px; }
+.wkc-grid-4 { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 0 14px; align-items: start; }
+.wkc-rows { margin: 10px 0; }
+.wkc-row { display: flex; gap: 10px; align-items: flex-start; background: #f9f9f9; border: 1px solid #e2e4e7; border-radius: 4px; padding: 6px 10px; margin-bottom: 8px; }
+.wkc-row-body { flex: 1; }
+.wkc-row-handle { cursor: move; color: #8c8f94; margin-top: 34px; }
+.wkc-row-remove { color: #b32d2e; margin-top: 32px; }
+.wkc-image-picker .wkc-image-preview img { max-width: 100%; max-height: 140px; display: block; margin-bottom: 6px; border: 1px solid #ddd; background: #fff; }
+.wkc-row .wkc-image-picker .wkc-image-preview img { max-height: 60px; }
+.wkc-image-picker:not(.has-image) .wkc-image-remove { display: none; }
+.wkc-image-remove { color: #b32d2e; }
+.wkc-tab-nav { display: flex; gap: 4px; border-bottom: 1px solid #c3c4c7; margin-bottom: 12px; }
+.wkc-tab-nav a { padding: 8px 14px; text-decoration: none; color: #50575e; border: 1px solid transparent; border-bottom: 0; margin-bottom: -1px; border-radius: 3px 3px 0 0; }
+.wkc-tab-nav a.is-active { background: #fff; border-color: #c3c4c7; color: #1d2327; font-weight: 600; }
+.wkc-tab { display: none; }
+.wkc-tab.is-active { display: block; }
+.wkc-warn { color: #b32d2e; font-weight: 600; }
+.wkc-stats { margin: 6px 0 0 16px; list-style: disc; }
+#wkc_colors .wp-picker-container { display: block; }
+@media (max-width: 1100px) { .wkc-grid-4, .wkc-grid-3, .wkc-grid-2 { grid-template-columns: 1fr; } }

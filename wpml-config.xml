@@ -1,0 +1,48 @@
+<wpml-config>
+	<custom-types>
+		<custom-type translate="1">wkc_kit</custom-type>
+	</custom-types>
+	<custom-fields>
+		<custom-field action="copy">_wkc_box_product</custom-field>
+		<custom-field action="copy">_wkc_categories</custom-field>
+		<custom-field action="copy">_wkc_include_children</custom-field>
+		<custom-field action="copy">_wkc_allow_duplicates</custom-field>
+		<custom-field action="copy">_wkc_preselect</custom-field>
+		<custom-field action="copy">_wkc_after_add</custom-field>
+		<custom-field action="copy">_wkc_show_hero</custom-field>
+		<custom-field action="copy">_wkc_show_story</custom-field>
+		<custom-field action="copy">_wkc_hero_image</custom-field>
+		<custom-field action="copy">_wkc_summary_image</custom-field>
+		<custom-field action="copy">_wkc_story_image</custom-field>
+		<custom-field action="copy">_wkc_color_accent</custom-field>
+		<custom-field action="copy">_wkc_color_accent_txt</custom-field>
+		<custom-field action="copy">_wkc_color_button</custom-field>
+		<custom-field action="copy">_wkc_color_button_txt</custom-field>
+		<custom-field action="copy">_wkc_color_selected</custom-field>
+		<custom-field action="translate">_wkc_hero_title</custom-field>
+		<custom-field action="translate">_wkc_hero_text</custom-field>
+		<custom-field action="translate">_wkc_slots</custom-field>
+		<custom-field action="translate">_wkc_label_line</custom-field>
+		<custom-field action="translate">_wkc_label_fragrance</custom-field>
+		<custom-field action="translate">_wkc_label_soldout</custom-field>
+		<custom-field action="translate">_wkc_summary_title</custom-field>
+		<custom-field action="translate">_wkc_box_label</custom-field>
+		<custom-field action="translate">_wkc_box_name</custom-field>
+		<custom-field action="translate">_wkc_label_empty</custom-field>
+		<custom-field action="translate">_wkc_label_edit</custom-field>
+		<custom-field action="translate">_wkc_label_subtotal</custom-field>
+		<custom-field action="translate">_wkc_button_label</custom-field>
+		<custom-field action="translate">_wkc_label_added</custom-field>
+		<custom-field action="translate">_wkc_label_view_cart</custom-field>
+		<custom-field action="translate">_wkc_story_title</custom-field>
+		<custom-field action="translate">_wkc_story_text</custom-field>
+	</custom-fields>
+	<custom-fields-texts>
+		<key name="_wkc_slots">
+			<key name="*">
+				<key name="title" />
+				<key name="description" />
+			</key>
+		</key>
+	</custom-fields-texts>
+</wpml-config>
