@@ -46,7 +46,7 @@ Crea un prodotto semplice, es. **"Christmas Gift Box"** a 1,50 €, con l'immagi
 - **Testi e immagini** (schede Hero, Configuratore, Riepilogo, Sezione finale): tutti i testi del PDF sono precompilati e modificabili; le immagini si scelgono dalla Libreria media.
 - **Colori**: sfondo delle sezioni (bordeaux `#80161b` preso dal PDF), testo, bordo della selezione, pulsante.
 
-Pubblica il kit. La landing è subito disponibile su `https://nefel.it/kit/christmas-gift-set/`.
+Pubblica il kit. La landing è subito disponibile su `https://<dominio>/kit/christmas-gift-set/`.
 
 ### 4. In alternativa: Elementor
 Se preferisci una pagina Elementor con header e footer del tema Cosmetsy, inserisci un widget **Shortcode** con:
@@ -78,7 +78,7 @@ Christmas Gift Box        1,50 €   Contenuto: Sicilian Bergamot Hand Soap, Tur
 
 nefel.it usa WPML e WooCommerce Multilingual: il file `wpml-config.xml` incluso rende il kit traducibile. Testi e titoli degli step si traducono, mentre confezione, categorie, immagini e colori vengono copiati e convertiti in automatico negli ID della lingua corrente. Le stringhe fisse del plugin si traducono con `languages/wookit-configurator.pot`.
 
-## Cache (SiteGround)
+## Cache
 
 L'aggiunta al carrello usa l'endpoint `?wc-ajax=wkc_add_kit`, che non passa dalla cache, quindi la landing può restare in cache. Prezzi e disponibilità mostrati nella pagina sono quelli del momento in cui è stata messa in cache: dopo una modifica a un prodotto, svuota la cache della landing (il server rifiuta comunque i prodotti non più disponibili).
 
