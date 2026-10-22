@@ -4,7 +4,7 @@ Plugin WordPress/WooCommerce per creare **kit di prodotti configurabili** (es. *
 
 - una **confezione sempre inclusa** (prodotto WooCommerce, es. scatola natalizia);
 - **N prodotti scelti dal cliente** (predefinito: 2), prima per **linea** (categoria) e poi per **fragranza**;
-- una **landing page** con la struttura del PDF: hero → step di scelta → riepilogo "Il tuo GIFT SET" → sezione finale;
+- una **landing page** con la seguente struttura: hero → step di scelta → riepilogo "Il tuo GIFT SET" → sezione finale;
 - testi, immagini e colori modificabili da pannello.
 
 Nel selettore il cliente **non vede nome e foto del prodotto**: vede l'**anteprima** e il **nome della fragranza**, letti da due custom field del prodotto. Nel riepilogo e nel carrello compare invece il prodotto reale (es. "Sicilian Bergamot Hand Soap").
