@@ -1,4 +1,4 @@
-# WooKit Configurator – Kit regalo configurabili
+# WooKit Configurator – Kit regalo configurabili per WordPress-Woocommerce
 
 Plugin WordPress/WooCommerce per creare **kit di prodotti configurabili** (es. *Christmas Gift Set* di nefel.it) con:
 
